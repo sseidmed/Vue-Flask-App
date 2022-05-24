@@ -1,18 +1,23 @@
+
+import AllPlanets from '../views/AllPlanets.vue'
+import PlanetDetails from '../views/PlanetDetails.vue'
+import AddPlanet from '../views/AddPlanet.vue'
+
 const routes = [
     {
         name: 'Home',
         path: '/',
-        component: () => import('@/views/AllPlanets.vue') 
+        component: AllPlanets
     },
     { 
         name: 'planet',
         path: '/planet_details/:id',
-        component: () => import('@/views/PlanetDetails.vue') 
+        component: PlanetDetails
     },
     { 
         name: 'planet_add',
         path: '/planet_add',
-        component: () => import('@/views/AddPlanet.vue') 
+        component: AddPlanet
     }
 ]
 
